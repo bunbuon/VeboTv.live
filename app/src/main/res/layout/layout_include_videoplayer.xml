@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_close_chat"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_radius_button_grey"
+                android:drawableLeft="@drawable/ic_close_white_18dp"
+                android:fontFamily="@font/sansre"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/close_chat"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp"
+                android:visibility="gone" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/view2"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:elevation="12dp"
+                app:cardCornerRadius="40dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_avata"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/thumb_avata" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:id="@+id/txt_nameBLV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/sansbold"
+                android:text="BLV: Cáp Tần"
+                android:textColor="@color/white" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_open_chat"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_radius_button_grey"
+                android:drawableLeft="@drawable/btn_chat"
+                android:fontFamily="@font/sansre"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/open_chat"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/id_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout" />
+
+            <include
+                android:id="@+id/viewBottom"
+                layout="@layout/item_scroll_bottom" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

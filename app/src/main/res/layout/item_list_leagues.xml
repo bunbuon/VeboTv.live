@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@color/background_key_color"
+        android:padding="@dimen/_10sdp">
+
+        <com.ctrlplusz.anytextview.AnyTextView
+            android:id="@+id/tv_name_league"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sansbold"
+            android:text="Premier League"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_league"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="horizontal">
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:id="@+id/tv_name_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sansre"
+                android:text="England"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:fontFamily="@font/sansre"
+                android:text="●"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.ctrlplusz.anytextview.AnyTextView
+                android:id="@+id/tv_name_vongthidau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:fontFamily="@font/sansre"
+                android:text="Vòng 8 / 38"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo_league"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/goal_icon" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

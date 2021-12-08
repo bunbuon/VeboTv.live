@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tabs>
+        <tab
+            id="@+id/tab_watch"
+            icon="@drawable/tab_home_icon"
+            title="Trực tiếp" />
+        <tab
+            id="@+id/tab_matchs"
+            icon="@drawable/tab_home_icon"
+            title="Giải Đấu" />
+        <tab
+            id="@+id/tab_favorite"
+         icon="@drawable/tab_home_icon"
+            title="Yêu Thích" />
+        <tab
+            id="@+id/tab_soikeo"
+         icon="@drawable/tab_home_icon"
+            title="Soi Kèo" />
+        <tab
+            id="@+id/tab_them"
+         icon="@drawable/tab_home_icon"
+            title="Thêm" />
+    </tabs>
+</PreferenceScreen>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:background="@color/cardview_layout_color">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_avata"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:src="@drawable/goal_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo_team"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/img_avata"
+        android:src="@drawable/goal_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/img_logo_team"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.ctrlplusz.anytextview.AnyTextView
+            android:id="@+id/tv_name_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sansbold"
+            android:text="Cristina ronaldo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <com.ctrlplusz.anytextview.AnyTextView
+            android:id="@+id/tv_name_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sansre"
+            android:text="Manchester United"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+    <com.ctrlplusz.anytextview.AnyTextView
+        android:id="@+id/tv_top_socre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:fontFamily="@font/sansbold"
+        android:text="103"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp" />
+</RelativeLayout>

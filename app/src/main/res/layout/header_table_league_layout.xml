@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_key_color">
+
+    <com.ctrlplusz.anytextview.AnyTextView
+        android:id="@+id/tv_rank_team"
+        android:layout_width="@dimen/_19sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical|center_horizontal|center"
+        android:layout_margin="0dp"
+        android:fontFamily="@font/sansbold"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:text="#"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rank_change_image"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_gravity="left|center_vertical|center_horizontal|center"
+        android:gravity="center_vertical"
+        android:paddingRight="0dp"
+        android:src="@drawable/table_up"
+        android:visibility="invisible" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="2dp"
+        android:gravity="right|center_vertical|center_horizontal|center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/small"
+        android:visibility="invisible" />
+
+    <com.ctrlplusz.anytextview.AnyTextView
+        android:id="@+id/tv_name_team"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left|center_vertical|center_horizontal|center|start"
+        android:layout_margin="0dp"
+        android:layout_weight="40"
+        android:gravity="left|center_vertical|center_horizontal|center|start"
+        android:text="Đội"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_number_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical|center_horizontal|center"
+        android:layout_margin="0dp"
+        android:width="@dimen/_20sdp"
+        android:fontFamily="@font/sansbold"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/text_number_match"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+    <com.ctrlplusz.anytextview.AnyTextView
+        android:id="@+id/tv_thb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical|center_horizontal|center"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:width="@dimen/_40sdp"
+        android:fontFamily="@font/sansbold"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/text_thb_match"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+    <com.ctrlplusz.anytextview.AnyTextView
+        android:id="@+id/tv_hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical|center_horizontal|center"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:width="@dimen/_20sdp"
+        android:fontFamily="@font/sansbold"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/text_hieuso_match"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+    <com.ctrlplusz.anytextview.AnyTextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical|center_horizontal|center"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:width="@dimen/_30sdp"
+        android:fontFamily="@font/sansbold"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/text_point_match"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+</LinearLayout>
